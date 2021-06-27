@@ -1,0 +1,9 @@
+version: "3"
+services:
+  jupyter:
+    build: .
+    volumes:
+      - C:\Makefiles\data-compedition\MAIN\working:/tmp/working
+    ports:
+      - 8888:8888
+    #command: jupyter notebook --ip=0.0.0.0 --allow-root --no-browser
